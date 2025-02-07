@@ -1,0 +1,105 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#head-image {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#head-image img {
+  flex-grow: 1;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+#name {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-family: "knewave";
+  font-size: 40px;
+  z-index: 0;
+}
+
+#projects {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  gap: 25px;
+  background-image: linear-gradient(135deg, rgba(255,255,255, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
+}
+#projects .item {
+  width: 60%;
+  height: 25%;
+  border-radius: 10px;
+  background-image: linear-gradient(9deg, rgba(255,255,255, 0), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9),  rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+}
+
+.proTitle {
+  font-family: "Archivo";
+  font-style: italic;
+  font-size: 18px;
+  position: relative;
+  top: 4px;
+  left:6px;
+}
+
+#missionsTitle {
+  visibility: hidden;
+  color: white;
+  font-style: italic;
+  font-family: "Archivo";
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  z-index: 2;
+}
+
+#projects .item:active {
+  transform: scale(1.08) rotate(1deg);
+}
+
+@media only screen and (max-width: 972px) {
+  #head-image img {
+    transform: translate(-12%, 0);
+  }
+}
+@media only screen and (max-width: 800px) {
+  #head-image img {
+    transform: translate(-28%, 0);
+  }
+}
+@media only screen and (max-width: 575px) {
+  #projects {
+    gap: 30px;
+  }
+  #projects .item {
+    height: 20%;
+  }
+  #head-image img {
+    transform: translate(-35%, 0);
+  }
+}
+@media only screen and (max-width: 470px) {
+  #head-image img {
+    transform: translate(-36%, 0);
+  }
+  #name {
+    right: 50%;
+    transform: translate(50%, 0);
+  }
+}
