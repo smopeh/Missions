@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="engine.js" defer></script>
+  </head>
+  <body>
+    <div id="head-image">
+      <img src="IMG_0056.jpeg"/>
+    </div>
+    <div id="missionsTitle"><h1>Missions</h1></div>
+    <div id="projects" class="container">
+      <div id="project1" class="item">
+        <div class="proTitle">project</div>
+      </div>
+      <div id="project2" class="item">
+        <div class="proTitle">project</div>
+      </div>
+      <div id="project3" class="item">
+        <div class="proTitle">project</div>
+      </div>
+    </div>
+    <div id="name">smopeh</div>
+  </body>
+</html>
